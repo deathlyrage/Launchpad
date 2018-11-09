@@ -27,9 +27,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="GtkSharp" Version="3.22.24.36" />
-    <PackageReference Include="CommandLineParser" Version="2.2.1" />
+    <PackageReference Include="CommandLineParser" Version="2.3.0" />
     <PackageReference Include="NGettext" Version="0.6.3" />
-    <PackageReference Include="NLog" Version="4.5.2" />
+    <PackageReference Include="NLog" Version="4.5.11" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Interface\Launchpad.Utilities.glade" />
