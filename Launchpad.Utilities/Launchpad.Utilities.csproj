@@ -5,6 +5,7 @@
     <Platform>x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
     <LangVersion>7.1</LangVersion>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <!-- Workaround for https://github.com/dotnet/roslyn-project-system/issues/1739 -->
   <PropertyGroup>
@@ -19,7 +20,13 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <Prefer32bit>true</Prefer32bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Prefer32bit>true</Prefer32bit>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Prefer32bit>true</Prefer32bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Prefer32bit>true</Prefer32bit>
   </PropertyGroup>
   <ItemGroup>
